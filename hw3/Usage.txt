@@ -1,0 +1,16 @@
+---------------------------------------------------------------------------
+----------------------------   USAGE   ------------------------------------
+---------------------------------------------------------------------------
+1- -D_BSD_SOURCE  ile compile edilmeli 
+2- Konsol'dan  ./exe target directoryname komutlari girilerek calistirilir.
+3- Eger parametrelerde hata var ise uyari vererek programdan cikis yapar.
+4- Verilen klasörün içinde klasör olduğu sürece recursion olarak alt klasörlere 
+girer.
+5- Sonra her dosya içinde arama yapılır.
+6- Toplam eşleşme sayısı; dosyalar arası pipe, klasörler arası fifo ile
+eşleşme sayıları iletilerek toplana toplana bulunur.  
+7- Bulunan toplam eşleşme sayısı ile birlikte, bulunan eşleşmeler log.log 
+dosyasına kaydedilir.
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+--------------------------------------------------------------------------- 

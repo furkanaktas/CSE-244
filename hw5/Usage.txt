@@ -1,0 +1,21 @@
+---------------------------------------------------------------------------
+----------------------------   USAGE   ------------------------------------
+---------------------------------------------------------------------------
+1- Konsol'dan make komutu ile compile edilebilir. 
+2- Konsol'dan  ./grephSh target directoryname komutlari girilerek calistirilir.
+3- Eger parametrelerde hata var ise uyari vererek programdan cikis yapar.
+4- Verilen klasörün içinde klasör olduğu sürece recursion olarak alt klasörlere 
+girer.
+5- Sonra her dosya içinde arama yapılır.Satır sayısı ve bulunan eşleşme sayıları 
+toplamı için shared memory kullanıldı.(Her ayrı klasör içindeki tüm 
+dosyalar için thread) (aynı processte farklı thread ler)
+6- Toplam eşleşme sayısı;  klasörler arası message queue ile 
+eşleşme sayıları iletilerek toplana toplana bulunur.  
+7- Bulunan toplam eşleşme sayısı ile birlikte, bulunan eşleşmeler log.txt 
+dosyasına kaydedilir.
+8- Ctrl C ile kapanabilir.Sinyal handler için özel bir shared Memory yer alındı
+tüm veriler aynı zamanda burada kaydedildi.Program biterken buradan alınan veriler
+ekrana basılır ve program basılır.
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+--------------------------------------------------------------------------- 

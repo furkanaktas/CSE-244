@@ -1,0 +1,20 @@
+---------------------------------------------------------------------------
+----------------------------   USAGE   ------------------------------------
+---------------------------------------------------------------------------
+1- Konsol'dan make komutu ile compile edilebilir. 
+2- Konsol'dan  ./grepTh target directoryname komutlari girilerek calistirilir.
+3- Eger parametrelerde hata var ise uyari vererek programdan cikis yapar.
+4- Verilen klasörün içinde klasör olduğu sürece recursion olarak alt klasörlere 
+girer.
+5- Sonra her dosya içinde arama yapılır.(Her ayrı klasör içindeki tüm 
+dosyalar için thread) (aynı processte farklı thread ler)
+6- Toplam eşleşme sayısı;  klasörler arası fifo ile 
+eşleşme sayıları iletilerek toplana toplana bulunur.  
+7- Bulunan toplam eşleşme sayısı ile birlikte, bulunan eşleşmeler log.txt 
+dosyasına kaydedilir.
+8- Ctrl C ile kapanabilir.Main processin handler'ı 1.5 sn sleep le bekletilir. 
+O beklerken child handler lar ellerindeki verileri dosyaya yazar.En son main handler
+o dosyadan veileri okur ve program sonlanır.   
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+--------------------------------------------------------------------------- 

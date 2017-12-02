@@ -1,0 +1,15 @@
+---------------------------------------------------------------------------
+----------------------------   USAGE   ------------------------------------
+---------------------------------------------------------------------------
+1- -D_BSD_SOURCE  ile compile edilmeli.
+2- Konsol'dan  ./listdir target directoryname komutlari girilerek calistirilir.
+3- Eger parametrelerde hata var ise uyari vererek programdan cikis yapar.
+4- Verilen klasörün içinde klasör olduğu sürece recursion olarak alt klasörlere 
+girer.
+5- Sonra her dosya içinde arama yapılır.
+6- Toplam eşleşme sayısı totalMatches.txt ye eklenen 1'lerin toplamıyla bulunur.
+7- Bulunan toplam eşleşme sayısı ile birlikte, bulunan eşleşmeler log.log 
+dosyasına kaydedilir.
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+--------------------------------------------------------------------------- 
